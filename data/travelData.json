@@ -1,0 +1,199 @@
+{
+  "universal": {
+    "Travel Documents": [
+      "Passport",
+      "Government ID",
+      "Printed & digital tickets",
+      "Hotel confirmations",
+      "Travel insurance copy"
+    ],
+    "Toiletries": [
+      "Toothbrush & paste",
+      "Face wash",
+      "Moisturizer",
+      "Lip balm",
+      "Deodorant",
+      "Hand sanitizer"
+    ],
+    "Electronics": [
+      "Phone & charger",
+      "Power bank",
+      "Universal adapter",
+      "Noise cancelling earbuds",
+      "USB-C cable"
+    ],
+    "Clothing": [
+      "2 x Casual outfits",
+      "Sleepwear",
+      "Comfortable footwear",
+      "Undergarments",
+      "Socks"
+    ],
+    "Health & Safety": [
+      "Prescription medicines",
+      "Basic first-aid",
+      "Face masks",
+      "Reusable water bottle"
+    ]
+  },
+  "tripTypes": {
+    "business": [
+      "Formal suits",
+      "Dress shoes",
+      "Laptop & charger",
+      "Presentation clicker",
+      "Business cards"
+    ],
+    "casual": [
+      "Lightweight outfits",
+      "Casual sneakers",
+      "Daypack"
+    ],
+    "adventure": [
+      "Trekking shoes",
+      "Compact first-aid kit",
+      "Head torch",
+      "Energy bars",
+      "Extra power bank"
+    ],
+    "family": [
+      "Snacks for kids",
+      "Board games/cards",
+      "Wet wipes",
+      "Extra toiletries"
+    ]
+  },
+  "weather": {
+    "hot": [
+      "SPF 50 sunscreen",
+      "Wide brim hat",
+      "UV sunglasses",
+      "Electrolyte sachets"
+    ],
+    "cold": [
+      "Insulated jacket",
+      "Gloves",
+      "Sweaters",
+      "Woollen cap",
+      "Thermal socks"
+    ],
+    "rainy": [
+      "Compact umbrella",
+      "Raincoat or poncho",
+      "Waterproof shoe covers",
+      "Dry bags"
+    ],
+    "mixed": [
+      "Layering jacket",
+      "Convertible pants",
+      "Quick dry towel"
+    ],
+    "unknown": [
+      "Versatile jacket",
+      "Neutral footwear",
+      "Scarf / stole"
+    ]
+  },
+  "seasons": {
+    "winter": [
+      "Thermal innerwear",
+      "Beanie",
+      "Extra moisturizer"
+    ],
+    "summer": [
+      "Cooling towel",
+      "Aloe vera gel",
+      "Flip flops"
+    ],
+    "spring": [
+      "Light cardigan",
+      "Allergy medication"
+    ],
+    "monsoon": [
+      "Quick dry clothing",
+      "Waterproof phone pouch"
+    ]
+  },
+  "travelModes": {
+    "flight": [
+      "Printed boarding pass",
+      "Neck pillow",
+      "Compression socks"
+    ],
+    "train": [
+      "Light blanket",
+      "Travel pillow",
+      "Hand sanitizer"
+    ],
+    "car": [
+      "Road snacks",
+      "Car charger",
+      "Extra water bottles"
+    ]
+  },
+  "regions": {
+    "europe": {
+      "countries": [
+        "austria",
+        "belgium",
+        "croatia",
+        "czech",
+        "denmark",
+        "finland",
+        "france",
+        "germany",
+        "greece",
+        "hungary",
+        "ireland",
+        "italy",
+        "netherlands",
+        "norway",
+        "poland",
+        "portugal",
+        "spain",
+        "sweden",
+        "switzerland",
+        "united kingdom"
+      ],
+      "items": [
+        "Type C/F plug adapter",
+        "Offline maps",
+        "Chip-and-PIN cards"
+      ]
+    },
+    "southIndia": {
+      "keywords": ["chennai", "kochi", "bengaluru", "hyderabad", "coimbatore", "madurai", "pondicherry", "kerala", "mangaluru"],
+      "items": [
+        "Breathable cotton outfits",
+        "Extra ORS packets"
+      ]
+    },
+    "hillStation": {
+      "keywords": ["shimla", "manali", "darjeeling", "ooty", "mussoorie", "sikkim", "nainital", "leh", "lavasa"],
+      "items": [
+        "Thermal base layer",
+        "Wool socks",
+        "Windcheater"
+      ]
+    }
+  },
+  "countrySpecific": {
+    "india": [
+      "Small change for cash payments",
+      "UPI payments enabled"
+    ],
+    "japan": [
+      "JR pass",
+      "Cash for vending machines"
+    ],
+    "united states": [
+      "ESTA approval print",
+      "TSA approved locks"
+    ],
+    "australia": [
+      "Universal insect repellent",
+      "Slip-slop-slap essentials"
+    ]
+  }
+}
+
