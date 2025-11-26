@@ -15,7 +15,7 @@
   --brand-secondary: #00d4ff;
   --bg-default: #050c1f;
   --bg-card: #0f1b3d;
-  --border-muted: #1d2b55;
+  --border-muted: #2a3b6f; /* slightly brighter for better contrast */
   --text-primary: #eff3ff;
 }
 
@@ -26,6 +26,16 @@ body {
   color: var(--text-primary);
   font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
+}
+
+/* Global focus ring for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
 }
 
 .card {
@@ -41,11 +51,11 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--brand-primary)] px-5 py-3 font-semibold text-white shadow-lg shadow-[rgba(0,103,255,0.3)] transition hover:shadow-[rgba(0,103,255,0.5)];
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--brand-primary)] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[rgba(0,103,255,0.3)] transition hover:brightness-105 hover:shadow-[rgba(0,103,255,0.5)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/90 active:brightness-95 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center rounded-2xl border border-[var(--border-muted)] px-5 py-3 text-sm font-semibold text-[var(--text-primary)] transition hover:border-[var(--brand-primary)];
+  @apply inline-flex items-center justify-center rounded-2xl border border-[var(--border-muted)] px-5 py-3 text-sm font-semibold text-[var(--text-primary)] transition hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/5 focus-visible:outline-2 focus-visible:outline-[var(--brand-primary)] focus-visible:outline-offset-2 active:bg-[var(--brand-primary)]/10 disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
 .hero-gradient {

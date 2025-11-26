@@ -30,11 +30,12 @@ export const SiteHeader = () => {
               key={link.href}
               href={link.href}
               className={cn(
-                "rounded-2xl px-4 py-2 transition-colors",
+                "rounded-2xl px-4 py-2 transition-colors focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 text-white hover:text-white hover:bg-[var(--brand-primary)]/80",
                 pathname === link.href
-                  ? "bg-[var(--brand-primary)]/10 text-[var(--brand-primary)]"
-                  : "text-slate-500 hover:text-slate-900"
+                  ? " text-white"
+                  : "text-white hover:text-white hover:bg-[var(--brand-primary)]/80"
               )}
+              aria-current={pathname === link.href ? "page" : undefined}
             >
               {link.label}
             </Link>
@@ -44,6 +45,7 @@ export const SiteHeader = () => {
           <Link
             href="/plan"
             className="btn-secondary hidden text-sm md:inline-flex"
+            style={{ color: 'white' }}
           >
             Plan Trip
           </Link>
