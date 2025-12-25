@@ -47,16 +47,41 @@ export const BackpackHighlight = () => {
               <p className="text-xs text-slate-500">Smart alerts for overpacking</p>
             </div>
           </div>
-          <div className="mt-5 overflow-hidden rounded-2xl border border-[var(--border-muted)] bg-white/80 p-4">
-            <div className="pack-items">
+          <div className="mt-5 overflow-hidden rounded-2xl border border-[var(--border-muted)] p-4">
+            <div className="pack-items marquee-gradient">
               {[...PACK_ITEMS, ...PACK_ITEMS].map((item, index) => (
                 <span
                   key={`${item}-${index}`}
-                  className="rounded-full border border-[var(--border-muted)] px-3 py-1 text-xs font-semibold text-slate-500"
+                  style={{ animation: `pillFloat 6s ease-in-out ${index % 6 * 120}ms infinite` }}
+                  className="pack-pill"
                 >
                   {item}
                 </span>
               ))}
+            </div>
+
+            <div className="mt-4 flex items-center justify-between gap-3">
+              <div className="flex items-center gap-4">
+                <div className="text-xs text-[var(--text-primary)]/60">
+                  <span className="font-semibold text-[var(--text-primary)]">{PACK_ITEMS.length}</span>
+                  <span className="ml-1">items</span>
+                </div>
+
+                <div className="text-xs text-[var(--text-primary)]/60">
+                  <span className="font-semibold text-[var(--text-primary)]">≈1.8kg</span>
+                  <span className="ml-1">estimate</span>
+                </div>
+
+                <div className="text-xs text-[var(--text-primary)]/60">
+                  <span className="font-semibold text-[var(--text-primary)]">2</span>
+                  <span className="ml-1">alerts</span>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <button className="btn-secondary text-xs">Save preset</button>
+                <button className="btn-primary text-xs">Add to trip</button>
+              </div>
             </div>
           </div>
         </div>

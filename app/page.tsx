@@ -153,7 +153,7 @@ export default function Home() {
           </div>
           <Link href="/plan" className="btn-secondary text-xs">
             <Camera className="size-4" />
-            Pick a destination
+              Pick a destination
           </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-3">

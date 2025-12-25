@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 export const SiteFooter = () => (
-  <footer className="border-t border-[var(--border-muted)] bg-white py-10 text-sm text-slate-600">
+  <footer className="border-t border-[var(--border-muted)] bg-[var(--bg-card)] py-10 text-sm text-[var(--text-primary)]/70">
     <div className="mx-auto w-full max-w-6xl px-4">
       <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
         <div className="flex flex-col gap-2">
@@ -14,12 +14,12 @@ export const SiteFooter = () => (
             </svg>
             <span>Travel Bag</span>
           </Link>
-          <p className="text-sm text-slate-500">Smart packing lists for every trip.</p>
+          <p className="text-sm text-[var(--text-primary)]/60">Smart packing lists for every trip.</p>
         </div>
 
         <nav className="grid grid-cols-2 gap-6 sm:flex sm:gap-12" aria-label="Footer navigation">
           <div>
-            <h4 className="text-xs font-semibold text-slate-700 uppercase">Product</h4>
+            <h4 className="text-xs font-semibold text-[var(--text-primary)] uppercase">Product</h4>
             <ul className="mt-2 space-y-2">
               <li>
                 <Link href="/plan" className="hover:underline">
@@ -35,7 +35,7 @@ export const SiteFooter = () => (
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold text-slate-700 uppercase">Resources</h4>
+            <h4 className="text-xs font-semibold text-[var(--text-primary)] uppercase">Resources</h4>
             <ul className="mt-2 space-y-2">
               <li>
                 <Link href="/history" className="hover:underline">
@@ -52,21 +52,21 @@ export const SiteFooter = () => (
         </nav>
 
         <div className="w-full max-w-xs">
-          <h4 className="text-xs font-semibold text-slate-700 uppercase">Stay updated</h4>
+          <h4 className="text-xs font-semibold text-[var(--text-primary)] uppercase">Stay updated</h4>
           <form className="mt-3 flex gap-2" onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="footer-email" className="sr-only">Email address</label>
             <input
               id="footer-email"
               type="email"
               placeholder="Email address"
-              className="w-full rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]"
+              className="w-full rounded-md border border-[var(--border-muted)] bg-[var(--bg-default)] px-3 py-2 text-sm text-[var(--text-primary)] placeholder-[var(--text-primary)]/40 focus:outline-none focus:ring-2 focus:ring-[var(--brand-primary)]"
             />
             <button type="submit" className="inline-flex items-center gap-2 rounded-md bg-[var(--brand-primary)] px-3 py-2 text-white">
               Subscribe
             </button>
           </form>
 
-          <div className="mt-4 flex items-center gap-3 text-slate-500">
+          <div className="mt-4 flex items-center gap-3 text-[var(--text-primary)]/60">
             <a href="#" aria-label="Twitter" className="hover:text-[var(--brand-primary)]">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 5.92c-.64.28-1.33.47-2.05.55a3.6 3.6 0 001.6-1.98 7.2 7.2 0 01-2.28.87 3.6 3.6 0 00-6.14 3.28A10.2 10.2 0 013 4.9a3.6 3.6 0 001.12 4.8c-.52-.02-1.02-.16-1.45-.4v.04a3.6 3.6 0 002.88 3.53c-.28.08-.57.12-.87.12-.21 0-.42-.02-.62-.06a3.6 3.6 0 003.36 2.5A7.22 7.22 0 012 19.54 10.2 10.2 0 008.8 21c6.67 0 10.32-5.52 10.32-10.3v-.47A7.2 7.2 0 0022 5.92z" />
@@ -87,7 +87,7 @@ export const SiteFooter = () => (
       </div>
 
       <div className="mt-8 border-t border-[var(--border-muted)] pt-6 flex flex-col items-center justify-between gap-3 md:flex-row">
-        <p className="text-xs text-slate-500">© {new Date().getFullYear()} Travel Bag Checklist Generator. All rights reserved.</p>
+        <p className="text-xs text-[var(--text-primary)]/60">© {new Date().getFullYear()} Travel Bag Checklist Generator. All rights reserved.</p>
         <div className="flex gap-4">
           <Link href="/terms" className="text-xs hover:underline">
             Terms
